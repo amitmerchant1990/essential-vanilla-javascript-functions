@@ -16,6 +16,7 @@ function remove_duplicates(arr) {
 }
 
 console.log(remove_duplicates([4,5,4,6,7,8,2,6]));
+// [4, 5, 6, 7, 8, 2]
 ```
 
 ## Merge two arrays
@@ -29,4 +30,29 @@ function merge_array(arr1, arr2){
 }
 
 console.log(merge_array([1, 2, 3], [4, 5]));
+// [1, 2, 3, 4, 5]
+```
+
+## Array Chunk
+```javascript
+function array_chunk(arr, count){
+    var temp_arr = [];
+    
+    for(var i=0; i<arr.length;){
+        var chunk_arr = [];
+        for(var j=0; j<count; j++){
+            if(!arr[i])
+                break;
+            chunk_arr.push(arr[i]);
+            i++;
+        }
+        temp_arr.push(chunk_arr);
+    }
+    
+    return temp_arr;
+}
+
+
+console.log(array_chunk([1,2,3,4,5,6,7,8,9], 4));
+// [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ], [ 9 ] ]
 ```
