@@ -1,9 +1,9 @@
 # Vanilla JavaScript Functions
 
 
-## Remove duplicates from array
+## `array_unique()` - Remove duplicates from array
 ```javascript
-function remove_duplicates(arr) {
+function array_unique(arr) {
     var seen = {};
     var ret_arr = [];
     for(var i=0; i<arr.length; i++){
@@ -15,13 +15,13 @@ function remove_duplicates(arr) {
     return ret_arr;
 }
 
-console.log(remove_duplicates([4,5,4,6,7,8,2,6]));
+console.log(array_unique([4,5,4,6,7,8,2,6]));
 // [4, 5, 6, 7, 8, 2]
 ```
 
-## Merge two arrays
+## `array_merge()` - Merge two arrays
 ```javascript
-function merge_array(arr1, arr2){
+function array_merge(arr1, arr2){
     for(var i=0; i<arr2.length; i++){
         arr1.push(arr2[i]);
     }
@@ -29,11 +29,11 @@ function merge_array(arr1, arr2){
     return arr1;
 }
 
-console.log(merge_array([1, 2, 3], [4, 5]));
+console.log(array_merge([1, 2, 3], [4, 5]));
 // [1, 2, 3, 4, 5]
 ```
 
-## Array Chunk
+## `array_chunk()` - Splits an array into chunks of arrays
 ```javascript
 function array_chunk(arr, count){
     var temp_arr = [];
@@ -57,7 +57,7 @@ console.log(array_chunk([1,2,3,4,5,6,7,8,9], 4));
 // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ], [ 9 ] ]
 ```
 
-## Array Collapse
+## `array_collapse()` - Collapses a collection of arrays into a single, flat array
 ```javascript
 
 function array_collapse(...arrays){
