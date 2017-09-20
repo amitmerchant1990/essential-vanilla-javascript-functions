@@ -3,7 +3,7 @@
 
 ## `array_unique()`
 > Remove duplicates from an array
-```javascript
+```js
 function array_unique(arr) {
     var seen = {};
     var ret_arr = [];
@@ -22,7 +22,7 @@ console.log(array_unique([4,5,4,6,7,8,2,6]));
 
 ## `array_merge()`
 > Merge two arrays
-```javascript
+```js
 function array_merge(arr1, arr2){
     for(var i=0; i<arr2.length; i++){
         arr1.push(arr2[i]);
@@ -37,7 +37,7 @@ console.log(array_merge([1, 2, 3], [4, 5]));
 
 ## `array_chunk()`
 > Splits an array into chunks of arrays
-```javascript
+```js
 function array_chunk(arr, count){
     var temp_arr = [];
     
@@ -62,7 +62,7 @@ console.log(array_chunk([1,2,3,4,5,6,7,8,9], 4));
 
 ## `array_collapse()`
 > Collapses a collection of arrays into a single, flat array
-```javascript
+```js
 
 function array_collapse(...arrays){
     var collapse_arr = [];
@@ -82,9 +82,10 @@ console.log(array_collapse([1, 2, 3, 4], [5, 6], ["hello", "world"]));
 
 ## `array_diff()`
 > Returns the values in the `arr1` that are not present in `arr2`
-```javascript
+```js
 function array_diff(arr1, arr2){
     var temp_arr = [];
+    
     for(var i=0; i<arr1.length; i++){
         if(arr2.indexOf(arr1[i]) == -1){  
             temp_arr.push(arr1[i]);
@@ -94,7 +95,25 @@ function array_diff(arr1, arr2){
     return temp_arr;
 }
 
-
 console.log(array_diff([4,5,6,7, "unicorn"], [5, 6, 7]));
 // [ 4, 'unicorn' ]
+```
+
+## `array_intersect()`
+> Returns the values common in the two supplied arrays
+```js
+function array_intersect(arr1, arr2){
+    var temp_arr = [];
+    
+    for(var i=0; i<arr1.length; i++){
+        if(arr2.indexOf(arr1[i]) != -1){  
+            temp_arr.push(arr1[i]);
+        }
+    }
+    
+    return temp_arr;
+}
+
+console.log(array_intersect([4,5,6,7, "unicorn"], [5, 6, 7, 8]));
+// [ 5, 6, 7 ]
 ```
