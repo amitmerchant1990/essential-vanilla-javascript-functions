@@ -5,7 +5,7 @@
     - [`array_merge()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_merge) - Merge two arrays
     - [`array_chunk()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_chunk) - Splits an array into chunks of arrays
     - [`array_collapse()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_collapse) - Collapses a collection of arrays into a single, flat array
-    - [`array_diff()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_diff) - Returns the values in the arr1 that are not present in arr2
+    - [`array_diff()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_diff) - Returns the values in the array1 that are not present in array2
     - [`array_intersect()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_intersect) - Returns the values common in the two supplied arrays
     - [`array_map()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_map) - Sends each value of an array to a user-made function, which returns new values
     - [`array_reject()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_reject) - Flters the array using the given callback. The callback should return true if the item should be removed from the resulting array
