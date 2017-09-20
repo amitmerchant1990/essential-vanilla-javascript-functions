@@ -9,7 +9,7 @@
     - [`array_diff()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_diff) - Returns the values in the array1 that are not present in array2
     - [`array_intersect()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_intersect) - Returns the values common in the two supplied arrays
     - [`array_map()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_map) - Sends each value of an array to a user-made function, which returns new values
-    - [`array_reject()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_reject) - Flters the array using the given callback. The callback should return true if the item should be removed from the resulting array
+    - [`array_reject()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_reject) - Filters the array using the given callback. The callback should return true if the item should be removed from the resulting array
     - [`array_split()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_split) - Breaks an array into the given number of groups
     - [`array_take()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_take) - Returns a new array with the specified number of items
     - [`array_pad()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_pad) - Inserts a specified number of items, with a specified value, to an array
