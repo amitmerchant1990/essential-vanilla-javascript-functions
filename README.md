@@ -270,6 +270,7 @@ function range(start, end){
 range(5, 11);
 // [ 5, 6, 7, 8, 9, 10, 11 ]
 ```
+
 ## `str_split()`
 > Splits a string into an array
 ```js
@@ -285,4 +286,19 @@ function str_split(string){
 
 str_split("unicorn");
 // [ 'u', 'n', 'i', 'c', 'o', 'r', 'n' ]
+```
+
+## `str_pad()`
+> Pads a string to a new length
+```js
+function str_pad(string, size, value){
+    for(var i=0; i<size; i++){
+        string += value;
+    }
+    
+    return string;
+}
+
+str_pad("unicorn", 5 , ".");
+// unicorn.....
 ```
