@@ -117,3 +117,29 @@ function array_intersect(arr1, arr2){
 console.log(array_intersect([4,5,6,7, "unicorn"], [5, 6, 7, 8]));
 // [ 5, 6, 7 ]
 ```
+
+## `array_map()`
+> Sends each value of an array to a user-made function, which returns new values
+```js
+function array_map(arr, func){
+    var temp_arr = [];
+    
+    if(typeof func !== "function")
+        throw "Second parameter should be a function";
+    
+    for(var i=0; i<arr.length; i++){
+        temp_arr.push(func(arr[i]));
+    }
+    
+    return temp_arr;
+}
+
+
+console.log(
+    array_map([1, 2, 3, 4, 5], function (value) {
+        return value * 2;
+    })
+);
+
+// [ 2, 4, 6, 8, 10 ]
+```
