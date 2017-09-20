@@ -203,3 +203,32 @@ function array_split(arr, count){
 array_split([1,2,3,4,5,6,7,8,9], 4);
 // [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ], [ 7, 8, 9 ] ]
 ```
+
+## `array_take()`
+> Returns a new array with the specified number of items
+```js
+function array_take(arr, count){
+    var temp_arr = [];
+    
+    if(count<0){
+        count = Math.abs(count);
+        for(var i=(arr.length-count); i<arr.length; i++){
+            temp_arr.push(arr[i]);
+        }
+    }else{
+        for(var i=0; i<count; i++){
+            temp_arr.push(arr[i]);
+        }
+    }
+    
+    return temp_arr;
+}
+
+array_take([1,2,3,4,5,6,7,8,9], 4);
+// [ 1, 2, 3, 4 ]
+```
+> You may also pass a negative integer to take the specified amount of items from the end of the array:
+```js
+array_take([1,2,3,4,5,6,7,8,9], -3);
+// [ 7, 8, 9 ]
+```
