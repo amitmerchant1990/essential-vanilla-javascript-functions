@@ -1,4 +1,4 @@
-# Vanilla JavaScript Functions
+# Essential Vanilla JavaScript Functions
 > Some of the missing functions in JavaScript in vanilla form (inspired by [PHP](https://en.wikipedia.org/wiki/PHP)).
 
 - Arrays
