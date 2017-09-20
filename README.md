@@ -233,3 +233,18 @@ array_take([1,2,3,4,5,6,7,8,9], 4);
 array_take([1,2,3,4,5,6,7,8,9], -3);
 // [ 7, 8, 9 ]
 ```
+
+## `array_pad()`
+> Inserts a specified number of items, with a specified value, to an array
+```js
+
+function array_pad(arr, size, value){
+    for(var i=0; i<size; i++){
+        arr.push(value);
+    }
+    return arr;
+}
+
+console.log(array_pad([1,2,3,4], 2, "unicorn"));
+// [ 1, 2, 3, 4, 'unicorn', 'unicorn' ]
+```
