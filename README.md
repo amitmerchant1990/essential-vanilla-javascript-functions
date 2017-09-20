@@ -307,5 +307,22 @@ str_pad("unicorn", 5 , ".");
 // unicorn.....
 ```
 
+## `strrev()`
+> Reverses a string
+```js
+function strrev(string){
+    var temp_string = '';
+    
+    for(var i=string.length-1; i>=0; i--){
+        temp_string += string[i];
+    }
+    
+    return temp_string;
+}
+
+strrev("unicorn");
+// nrocinu
+```
+
 # License
 MIT
