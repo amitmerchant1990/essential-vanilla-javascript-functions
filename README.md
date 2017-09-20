@@ -2,7 +2,7 @@
 
 
 ## `array_unique()`
-> Remove duplicates from array
+> Remove duplicates from an array
 ```javascript
 function array_unique(arr) {
     var seen = {};
@@ -78,4 +78,23 @@ function array_collapse(...arrays){
 
 console.log(array_collapse([1, 2, 3, 4], [5, 6], ["hello", "world"]));
 // [ 1, 2, 3, 4, 5, 6, 'hello', 'world' ]
+```
+
+## `array_diff()`
+> Returns the values in the `arr1` that are not present in `arr2`
+```javascript
+function array_diff(arr1, arr2){
+    var temp_arr = [];
+    for(var i=0; i<arr1.length; i++){
+        if(arr2.indexOf(arr1[i]) == -1){  
+            temp_arr.push(arr1[i]);
+        }
+    }
+    
+    return temp_arr;
+}
+
+
+console.log(array_diff([4,5,6,7, "unicorn"], [5, 6, 7]));
+// [ 4, 'unicorn' ]
 ```
