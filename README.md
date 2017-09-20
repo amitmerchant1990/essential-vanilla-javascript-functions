@@ -325,5 +325,29 @@ strrev("unicorn");
 // nrocinu
 ```
 
+## `similar_text()`
+> Calculates the similarity between two strings
+```js
+function similar_text(string1, string2){
+    var seen = {};
+    var similar_count = 0;
+    
+    for(var i=0; i<string1.length; i++){
+        if((string2.indexOf(string1[i]) !== -1 && !(string1[i] in seen)) 
+                || string1[i]==' '
+        ){
+            similar_count++;
+            if(string1[i]!='')
+                seen[string1[i]] = true;
+        }
+    }
+    
+    return similar_count;
+}
+
+similar_text("Hello World","Hello Peter");
+// 6
+```
+
 # License
 MIT
