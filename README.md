@@ -36,7 +36,7 @@ function array_unique(arr){
 
         if (Object.prototype.toString.call(obj) === "[object Object]" || Object.prototype.toString.call(obj) === "[object Array]"){
             for (j in obj){
-                ret += "~" + keyify(j) + "^" + keyify(obj[j]) + "%";
+                ret += "~" + j + "^" + keyify(obj[j]) + "%";
             }
             return ret;
         }else{
