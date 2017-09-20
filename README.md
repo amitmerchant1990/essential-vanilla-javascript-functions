@@ -246,6 +246,24 @@ function array_pad(arr, size, value){
     return arr;
 }
 
-console.log(array_pad([1,2,3,4], 2, "unicorn"));
+array_pad([1,2,3,4], 2, "unicorn");
 // [ 1, 2, 3, 4, 'unicorn', 'unicorn' ]
+```
+
+## `range()`
+> Creates an array containing a range of elements
+```js
+function range(start, end){
+    var temp_arr = [];
+    
+    for(var i=start; i<=end; i++){
+        temp_arr.push(i);
+    }
+    
+    
+    return temp_arr;
+}
+
+range(5, 11);
+// [ 5, 6, 7, 8, 9, 10, 11 ]
 ```
