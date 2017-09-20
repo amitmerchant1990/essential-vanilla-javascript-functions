@@ -18,6 +18,7 @@
 - String
     - [`chunk_split()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#chunk_split) - Splits a string into a series of smaller parts
     - [`str_pad()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#str_pad) - Pads a string to a new length
+    - [`strrev()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#strrev) - Reverses a string
 
 ## `array_unique()`
 > Remove duplicates from an array
