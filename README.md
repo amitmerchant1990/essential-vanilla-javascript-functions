@@ -1,7 +1,8 @@
 # Vanilla JavaScript Functions
 
 
-## `array_unique()` - Remove duplicates from array
+## `array_unique()`
+> Remove duplicates from array
 ```javascript
 function array_unique(arr) {
     var seen = {};
@@ -19,7 +20,8 @@ console.log(array_unique([4,5,4,6,7,8,2,6]));
 // [4, 5, 6, 7, 8, 2]
 ```
 
-## `array_merge()` - Merge two arrays
+## `array_merge()`
+> Merge two arrays
 ```javascript
 function array_merge(arr1, arr2){
     for(var i=0; i<arr2.length; i++){
@@ -33,7 +35,8 @@ console.log(array_merge([1, 2, 3], [4, 5]));
 // [1, 2, 3, 4, 5]
 ```
 
-## `array_chunk()` - Splits an array into chunks of arrays
+## `array_chunk()`
+> Splits an array into chunks of arrays
 ```javascript
 function array_chunk(arr, count){
     var temp_arr = [];
@@ -57,7 +60,8 @@ console.log(array_chunk([1,2,3,4,5,6,7,8,9], 4));
 // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ], [ 9 ] ]
 ```
 
-## `array_collapse()` - Collapses a collection of arrays into a single, flat array
+## `array_collapse()`
+> Collapses a collection of arrays into a single, flat array
 ```javascript
 
 function array_collapse(...arrays){
