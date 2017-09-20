@@ -12,6 +12,7 @@
     - [`array_split()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_split) - Breaks an array into the given number of groups
     - [`array_take()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_take) - Returns a new array with the specified number of items
     - [`array_pad()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_pad) - Inserts a specified number of items, with a specified value, to an array
+    - [`range()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#range) - Creates an array containing a range of elements
 
 ## `array_unique()`
 > Remove duplicates from an array
@@ -259,7 +260,6 @@ function range(start, end){
     for(var i=start; i<=end; i++){
         temp_arr.push(i);
     }
-    
     
     return temp_arr;
 }
