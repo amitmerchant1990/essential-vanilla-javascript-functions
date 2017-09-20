@@ -136,6 +136,28 @@ function array_map(arr, func){
 array_map([1, 2, 3, 4, 5], function (value) {
     return value * 2;
 });
-
 // [ 2, 4, 6, 8, 10 ]
+```
+
+## `array_reject()`
+>  Flters the array using the given callback. The callback should return `true` if the item should be removed from the resulting array
+```js
+function array_reject(arr, func){
+    var temp_arr = [];
+    
+    if(typeof func !== "function")
+        throw "Second parameter should be a function";
+    
+    for(var i=0; i<arr.length; i++){
+        if(func(arr[i]))
+            temp_arr.push(arr[i]);
+    }
+    
+    return temp_arr;
+}
+
+array_reject([1, 2, 3, 4, 5], function (value) {
+    return value > 3;
+});
+// [ 4, 5 ]
 ```
