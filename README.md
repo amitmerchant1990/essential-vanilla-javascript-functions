@@ -1,5 +1,5 @@
 # Vanilla JavaScript Functions
-> Some of the missing functions in JavaScript in vanilla form(inspired by [PHP](https://en.wikipedia.org/wiki/PHP)).
+> Some of the missing functions in JavaScript in vanilla form (inspired by [PHP](https://en.wikipedia.org/wiki/PHP)).
 
 - Arrays
     - [`array_unique()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_unique) - Remove duplicates from an array
