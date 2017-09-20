@@ -16,7 +16,7 @@ function array_unique(arr) {
     return ret_arr;
 }
 
-console.log(array_unique([4,5,4,6,7,8,2,6]));
+array_unique([4,5,4,6,7,8,2,6]);
 // [4, 5, 6, 7, 8, 2]
 ```
 
@@ -31,7 +31,7 @@ function array_merge(arr1, arr2){
     return arr1;
 }
 
-console.log(array_merge([1, 2, 3], [4, 5]));
+array_merge([1, 2, 3], [4, 5]);
 // [1, 2, 3, 4, 5]
 ```
 
@@ -55,8 +55,7 @@ function array_chunk(arr, count){
     return temp_arr;
 }
 
-
-console.log(array_chunk([1,2,3,4,5,6,7,8,9], 4));
+array_chunk([1,2,3,4,5,6,7,8,9], 4);
 // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ], [ 9 ] ]
 ```
 
@@ -76,7 +75,7 @@ function array_collapse(...arrays){
     return collapse_arr;
 }
 
-console.log(array_collapse([1, 2, 3, 4], [5, 6], ["hello", "world"]));
+array_collapse([1, 2, 3, 4], [5, 6], ["hello", "world"]);
 // [ 1, 2, 3, 4, 5, 6, 'hello', 'world' ]
 ```
 
@@ -95,7 +94,7 @@ function array_diff(arr1, arr2){
     return temp_arr;
 }
 
-console.log(array_diff([4,5,6,7, "unicorn"], [5, 6, 7]));
+array_diff([4,5,6,7, "unicorn"], [5, 6, 7]);
 // [ 4, 'unicorn' ]
 ```
 
@@ -114,7 +113,7 @@ function array_intersect(arr1, arr2){
     return temp_arr;
 }
 
-console.log(array_intersect([4,5,6,7, "unicorn"], [5, 6, 7, 8]));
+array_intersect([4,5,6,7, "unicorn"], [5, 6, 7, 8]);
 // [ 5, 6, 7 ]
 ```
 
@@ -134,12 +133,9 @@ function array_map(arr, func){
     return temp_arr;
 }
 
-
-console.log(
-    array_map([1, 2, 3, 4, 5], function (value) {
-        return value * 2;
-    })
-);
+array_map([1, 2, 3, 4, 5], function (value) {
+    return value * 2;
+});
 
 // [ 2, 4, 6, 8, 10 ]
 ```
