@@ -267,3 +267,19 @@ function range(start, end){
 range(5, 11);
 // [ 5, 6, 7, 8, 9, 10, 11 ]
 ```
+## `str_split()`
+> Splits a string into an array
+```js
+function str_split(string){
+    var temp_arr = [];
+    
+    for(var i=0; i<string.length; i++){
+        temp_arr.push(string[i]);
+    }
+    
+    return temp_arr;
+}
+
+str_split("unicorn");
+// [ 'u', 'n', 'i', 'c', 'o', 'r', 'n' ]
+```
