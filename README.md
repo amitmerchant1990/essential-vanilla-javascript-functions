@@ -271,21 +271,23 @@ range(5, 11);
 // [ 5, 6, 7, 8, 9, 10, 11 ]
 ```
 
-## `str_split()`
-> Splits a string into an array
+## `chunk_split()`
+> Splits a string into a series of smaller parts
 ```js
-function str_split(string){
-    var temp_arr = [];
+function chunk_split(string, length, end){
+    var temp_string = '';
     
     for(var i=0; i<string.length; i++){
-        temp_arr.push(string[i]);
+        temp_string += string[i];
+        if((i+1)%length==0)
+            temp_string += end;
     }
     
-    return temp_arr;
+    return temp_string;
 }
 
-str_split("unicorn");
-// [ 'u', 'n', 'i', 'c', 'o', 'r', 'n' ]
+console.log(chunk_split("Hello", 1 , "."));
+// H.e.l.l.o.
 ```
 
 ## `str_pad()`
