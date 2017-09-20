@@ -13,6 +13,9 @@
     - [`array_take()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_take) - Returns a new array with the specified number of items
     - [`array_pad()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#array_pad) - Inserts a specified number of items, with a specified value, to an array
     - [`range()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#range) - Creates an array containing a range of elements
+    
+- String
+    - [`str_split()`](https://github.com/amitmerchant1990/vanilla-javascript-functions#str_split) - Splits a string into an array
 
 ## `array_unique()`
 > Remove duplicates from an array
