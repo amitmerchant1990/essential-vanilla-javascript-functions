@@ -25,30 +25,11 @@
 > Remove duplicates from an array
 ```js
 function array_unique(arr){
-    var seen = {};
     var ret_arr = [];
-    var key;
-    var i;
 
-    function keyify(obj){
-        var ret = "";
-        var j;
-
-        if (Object.prototype.toString.call(obj) === "[object Object]" || Object.prototype.toString.call(obj) === "[object Array]"){
-            for (j in obj){
-                ret += "~" + j + "^" + keyify(obj[j]) + "%";
-            }
-            return ret;
-        }else{
-          return obj;
-        }
-    }
-
-    for(i = 0; i < arr.length; i++){
-        key = keyify(arr[i]);
-        if(!(key in seen)){
+    for (var i = 0; i < arr.length; i++){
+        if (ret_arr.indexOf(arr[i]) === -1){
             ret_arr.push(arr[i]);
-            seen[key] = true;
         }
     }
 
