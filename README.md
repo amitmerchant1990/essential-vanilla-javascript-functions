@@ -24,20 +24,41 @@
 ## `array_unique()`
 > Remove duplicates from an array
 ```js
-function array_unique(arr) {
+function array_unique(arr){
     var seen = {};
     var ret_arr = [];
-    for(var i=0; i<arr.length; i++){
-        if(!(arr[i] in seen)){
-            ret_arr.push(arr[i]);
-            seen[arr[i]] = true;
+    var key;
+    var i;
+
+    function keyify(obj){
+        var ret = "";
+        var j;
+
+        if (Object.prototype.toString.call(obj) === "[object Object]" || Object.prototype.toString.call(obj) === "[object Array]"){
+            for (j in obj){
+                ret += "~" + j + "^" + keyify(obj[j]) + "%";
+            }
+            return ret;
+        }else{
+          return obj;
         }
     }
+
+    for(i = 0; i < arr.length; i++){
+        key = keyify(arr[i]);
+        if(!(key in seen)){
+            ret_arr.push(arr[i]);
+            seen[key] = true;
+        }
+    }
+
     return ret_arr;
 }
 
 array_unique([4,5,4,6,7,8,2,6]);
 // [4, 5, 6, 7, 8, 2]
+array_unique([{a: 'val'}, {b: 'val', c: 'val'}, 'a', 'b', [1,2,3,4], {a: 'val'}, [1,2,3,4], [{a: 'val'}, {b: 'val'}], [{a: 'val'}, {b: 'val'}]]);
+// [{a: 'val'}, {b: 'val', c: 'val'}, 'a', 'b', [1,2,3,4], [{a: 'val'}, {b: 'val'}]]
 ```
 
 ## `array_merge()`
