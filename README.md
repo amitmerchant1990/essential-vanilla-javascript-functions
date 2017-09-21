@@ -181,7 +181,7 @@ array_map([1, 2, 3, 4, 5], function (value) {
 ```
 
 ## `array_reject()`
->  Flters the array using the given callback. The callback should return `true` if the item should be removed from the resulting array
+>  Filters the array using the given callback. The callback should return `true` if the item should be removed from the resulting array
 ```js
 function array_reject(arr, func){
     var temp_arr = [];
@@ -356,8 +356,8 @@ function similar_text(string1, string2){
     
     for(var i=0; i<string1.length; i++){
         if((string2.indexOf(string1[i]) !== -1 && !(string1[i] in seen)) 
-                || string1[i]==' '
-        ){
+                || string1[i]==' ')
+        {
             similar_count++;
             if(string1[i]!='')
                 seen[string1[i]] = true;
